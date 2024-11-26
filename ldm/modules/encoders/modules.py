@@ -7,7 +7,6 @@ from transformers import CLIPTokenizer, CLIPTextModel
 import kornia
 
 from ldm.modules.x_transformer import Encoder, TransformerWrapper  # TODO: can we directly rely on lucidrains code and simply add this as a reuirement? --> test
-from ldm.modules.encoders.long_clip.model import longclip
 
 class AbstractEncoder(nn.Module):
     def __init__(self):
